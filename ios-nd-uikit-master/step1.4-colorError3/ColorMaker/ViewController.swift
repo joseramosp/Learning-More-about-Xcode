@@ -30,6 +30,10 @@ class ViewController: UIViewController {
     
     @IBAction func changeColorComponent(_ sender: AnyObject) {
         
+        if self.redControl == nil {
+            return
+        }
+            
         let r: CGFloat = self.redControl.isOn ? 1 : 0
         let g: CGFloat = self.greenControl.isOn ? 1 : 0
         let b: CGFloat = self.blueControl.isOn ? 1 : 0
