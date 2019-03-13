@@ -110,7 +110,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckr-Co-O4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="o8S-Co-8tn"/>
             </objects>
-            <point key="canvasLocation" x="1032" y="790.70464767616193"/>
+            <point key="canvasLocation" x="1215" y="790"/>
         </scene>
     </scenes>
     <resources>
