@@ -34,7 +34,8 @@ class RollViewController: UIViewController {
         
         controller.firstValue = self.randomDiceValue()
         controller.secondValue = self.randomDiceValue()
-        
+        //print(controller.firstValue)
+        //print(controller.secondValue)
         present(controller, animated: true, completion: nil)
     }
     
