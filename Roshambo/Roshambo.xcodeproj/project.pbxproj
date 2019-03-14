@@ -7,24 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82C3668F222F45C200344356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3668E222F45C200344356 /* AppDelegate.swift */; };
-		82C36691222F45C200344356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C36690222F45C200344356 /* ViewController.swift */; };
-		82C36694222F45C200344356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C36692222F45C200344356 /* Main.storyboard */; };
-		82C36696222F45C300344356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C36695222F45C300344356 /* Assets.xcassets */; };
-		82C36699222F45C300344356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C36697222F45C300344356 /* LaunchScreen.storyboard */; };
+		823E5078223A5089008D47A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E5077223A5089008D47A8 /* AppDelegate.swift */; };
+		823E507A223A5089008D47A8 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E5079223A5089008D47A8 /* PlayViewController.swift */; };
+		823E507D223A5089008D47A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823E507B223A5089008D47A8 /* Main.storyboard */; };
+		823E507F223A508B008D47A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823E507E223A508B008D47A8 /* Assets.xcassets */; };
+		823E5082223A508B008D47A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823E5080223A508B008D47A8 /* LaunchScreen.storyboard */; };
+		823E508C223A59AC008D47A8 /* PaperCoversRockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E508B223A59AC008D47A8 /* PaperCoversRockViewController.swift */; };
+		823E508E223A59F0008D47A8 /* RockCrushesScissorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E508D223A59F0008D47A8 /* RockCrushesScissorsViewController.swift */; };
+		823E5090223A5A19008D47A8 /* ScissorsCutPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E508F223A5A19008D47A8 /* ScissorsCutPaperViewController.swift */; };
+		823E5092223A5DCB008D47A8 /* ItsATieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E5091223A5DCB008D47A8 /* ItsATieViewController.swift */; };
+		823E5094223A5DF6008D47A8 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E5093223A5DF6008D47A8 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		82C3668B222F45C200344356 /* Color Maker with Sliders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Color Maker with Sliders.app"; path = "/Users/jose/Documents/Udacity - iOS Dev/Learning More about Xcode/Color Maker with Sliders/build/Debug-iphoneos/Color Maker with Sliders.app"; sourceTree = "<absolute>"; };
-		82C3668E222F45C200344356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82C36690222F45C200344356 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		82C36693222F45C200344356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		82C36695222F45C300344356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		82C36698222F45C300344356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		823E5074223A5089008D47A8 /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		823E5077223A5089008D47A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		823E5079223A5089008D47A8 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		823E507C223A5089008D47A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		823E507E223A508B008D47A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		823E5081223A508B008D47A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		823E5083223A508B008D47A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		823E508B223A59AC008D47A8 /* PaperCoversRockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperCoversRockViewController.swift; sourceTree = "<group>"; };
+		823E508D223A59F0008D47A8 /* RockCrushesScissorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockCrushesScissorsViewController.swift; sourceTree = "<group>"; };
+		823E508F223A5A19008D47A8 /* ScissorsCutPaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScissorsCutPaperViewController.swift; sourceTree = "<group>"; };
+		823E5091223A5DCB008D47A8 /* ItsATieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItsATieViewController.swift; sourceTree = "<group>"; };
+		823E5093223A5DF6008D47A8 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		82C36688222F45C200344356 /* Frameworks */ = {
+		823E5071223A5089008D47A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,66 +45,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		82C36682222F45C200344356 = {
+		823E506B223A5089008D47A8 = {
 			isa = PBXGroup;
 			children = (
-				82C3668D222F45C200344356 /* Color Maker with Sliders */,
+				823E5076223A5089008D47A8 /* Roshambo */,
+				823E5075223A5089008D47A8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		82C3668D222F45C200344356 /* Color Maker with Sliders */ = {
+		823E5075223A5089008D47A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				82C3668E222F45C200344356 /* AppDelegate.swift */,
-				82C36690222F45C200344356 /* ViewController.swift */,
-				82C36692222F45C200344356 /* Main.storyboard */,
-				82C36695222F45C300344356 /* Assets.xcassets */,
-				82C36697222F45C300344356 /* LaunchScreen.storyboard */,
+				823E5074223A5089008D47A8 /* Roshambo.app */,
 			);
-			path = "Color Maker with Sliders";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		823E5076223A5089008D47A8 /* Roshambo */ = {
+			isa = PBXGroup;
+			children = (
+				823E5077223A5089008D47A8 /* AppDelegate.swift */,
+				823E5079223A5089008D47A8 /* PlayViewController.swift */,
+				823E5093223A5DF6008D47A8 /* ResultViewController.swift */,
+				823E507B223A5089008D47A8 /* Main.storyboard */,
+				823E507E223A508B008D47A8 /* Assets.xcassets */,
+				823E5080223A508B008D47A8 /* LaunchScreen.storyboard */,
+				823E5083223A508B008D47A8 /* Info.plist */,
+				823E508B223A59AC008D47A8 /* PaperCoversRockViewController.swift */,
+				823E508D223A59F0008D47A8 /* RockCrushesScissorsViewController.swift */,
+				823E508F223A5A19008D47A8 /* ScissorsCutPaperViewController.swift */,
+				823E5091223A5DCB008D47A8 /* ItsATieViewController.swift */,
+			);
+			path = Roshambo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		82C3668A222F45C200344356 /* Color Maker with Sliders */ = {
+		823E5073223A5089008D47A8 /* Roshambo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82C3669D222F45C300344356 /* Build configuration list for PBXNativeTarget "Color Maker with Sliders" */;
+			buildConfigurationList = 823E5086223A508B008D47A8 /* Build configuration list for PBXNativeTarget "Roshambo" */;
 			buildPhases = (
-				82C36687222F45C200344356 /* Sources */,
-				82C36688222F45C200344356 /* Frameworks */,
-				82C36689222F45C200344356 /* Resources */,
+				823E5070223A5089008D47A8 /* Sources */,
+				823E5071223A5089008D47A8 /* Frameworks */,
+				823E5072223A5089008D47A8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Color Maker with Sliders";
-			productName = "Color Maker with Sliders";
-			productReference = 82C3668B222F45C200344356 /* Color Maker with Sliders.app */;
+			name = Roshambo;
+			productName = Roshambo;
+			productReference = 823E5074223A5089008D47A8 /* Roshambo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		82C36683222F45C200344356 /* Project object */ = {
+		823E506C223A5089008D47A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Jose Ramos";
 				TargetAttributes = {
-					82C3668A222F45C200344356 = {
+					823E5073223A5089008D47A8 = {
 						CreatedOnToolsVersion = 10.1;
-						SystemCapabilities = {
-							com.apple.Keychain = {
-								enabled = 0;
-							};
-						};
 					};
 				};
 			};
-			buildConfigurationList = 82C36686222F45C200344356 /* Build configuration list for PBXProject "Color Maker with Sliders" */;
+			buildConfigurationList = 823E506F223A5089008D47A8 /* Build configuration list for PBXProject "Roshambo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -101,54 +122,59 @@
 				en,
 				Base,
 			);
-			mainGroup = 82C36682222F45C200344356;
-			productRefGroup = 82C36682222F45C200344356;
+			mainGroup = 823E506B223A5089008D47A8;
+			productRefGroup = 823E5075223A5089008D47A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				82C3668A222F45C200344356 /* Color Maker with Sliders */,
+				823E5073223A5089008D47A8 /* Roshambo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		82C36689222F45C200344356 /* Resources */ = {
+		823E5072223A5089008D47A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82C36699222F45C300344356 /* LaunchScreen.storyboard in Resources */,
-				82C36696222F45C300344356 /* Assets.xcassets in Resources */,
-				82C36694222F45C200344356 /* Main.storyboard in Resources */,
+				823E5082223A508B008D47A8 /* LaunchScreen.storyboard in Resources */,
+				823E507F223A508B008D47A8 /* Assets.xcassets in Resources */,
+				823E507D223A5089008D47A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		82C36687222F45C200344356 /* Sources */ = {
+		823E5070223A5089008D47A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82C36691222F45C200344356 /* ViewController.swift in Sources */,
-				82C3668F222F45C200344356 /* AppDelegate.swift in Sources */,
+				823E5092223A5DCB008D47A8 /* ItsATieViewController.swift in Sources */,
+				823E507A223A5089008D47A8 /* PlayViewController.swift in Sources */,
+				823E5094223A5DF6008D47A8 /* ResultViewController.swift in Sources */,
+				823E5090223A5A19008D47A8 /* ScissorsCutPaperViewController.swift in Sources */,
+				823E5078223A5089008D47A8 /* AppDelegate.swift in Sources */,
+				823E508E223A59F0008D47A8 /* RockCrushesScissorsViewController.swift in Sources */,
+				823E508C223A59AC008D47A8 /* PaperCoversRockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		82C36692222F45C200344356 /* Main.storyboard */ = {
+		823E507B223A5089008D47A8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				82C36693222F45C200344356 /* Base */,
+				823E507C223A5089008D47A8 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		82C36697222F45C300344356 /* LaunchScreen.storyboard */ = {
+		823E5080223A508B008D47A8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				82C36698222F45C300344356 /* Base */,
+				823E5081223A508B008D47A8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -156,7 +182,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		82C3669B222F45C300344356 /* Debug */ = {
+		823E5084223A508B008D47A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		82C3669C222F45C300344356 /* Release */ = {
+		823E5085223A508B008D47A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -272,36 +298,36 @@
 			};
 			name = Release;
 		};
-		82C3669E222F45C300344356 /* Debug */ = {
+		823E5087223A508B008D47A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NKU8AU83MB;
-				INFOPLIST_FILE = "Color Maker with Sliders/Info.plist";
+				INFOPLIST_FILE = Roshambo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.JoseRamos.Color-Maker-with-Sliders";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoseRamos.Roshambo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		82C3669F222F45C300344356 /* Release */ = {
+		823E5088223A508B008D47A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NKU8AU83MB;
-				INFOPLIST_FILE = "Color Maker with Sliders/Info.plist";
+				INFOPLIST_FILE = Roshambo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.JoseRamos.Color-Maker-with-Sliders";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoseRamos.Roshambo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,25 +337,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		82C36686222F45C200344356 /* Build configuration list for PBXProject "Color Maker with Sliders" */ = {
+		823E506F223A5089008D47A8 /* Build configuration list for PBXProject "Roshambo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82C3669B222F45C300344356 /* Debug */,
-				82C3669C222F45C300344356 /* Release */,
+				823E5084223A508B008D47A8 /* Debug */,
+				823E5085223A508B008D47A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82C3669D222F45C300344356 /* Build configuration list for PBXNativeTarget "Color Maker with Sliders" */ = {
+		823E5086223A508B008D47A8 /* Build configuration list for PBXNativeTarget "Roshambo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82C3669E222F45C300344356 /* Debug */,
-				82C3669F222F45C300344356 /* Release */,
+				823E5087223A508B008D47A8 /* Debug */,
+				823E5088223A508B008D47A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 82C36683222F45C200344356 /* Project object */;
+	rootObject = 823E506C223A5089008D47A8 /* Project object */;
 }

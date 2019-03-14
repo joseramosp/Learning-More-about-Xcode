@@ -51,10 +51,10 @@ class ViewController: UIViewController {
         
     }
     
-    func changeRect() {
-        colorView.
-        
-    }
+//    func changeRect() {
+//        colorView
+//        
+//    }
 
 }
 
