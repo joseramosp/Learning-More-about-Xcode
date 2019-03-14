@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PlayViewController: UIViewController {
 
     var paper: Int = 1
     var rock: Int = 2
