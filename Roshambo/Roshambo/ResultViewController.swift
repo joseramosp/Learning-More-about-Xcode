@@ -45,7 +45,11 @@ class ResultViewController: UIViewController {
             self.resultLabel.isEnabled = true
         }
     }
-
+    
+    @IBAction func dismiss() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

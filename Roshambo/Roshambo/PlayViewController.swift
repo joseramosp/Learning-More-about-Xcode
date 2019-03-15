@@ -24,6 +24,7 @@ class PlayViewController: UIViewController {
     }
     
     @IBAction func rockPressed() {
+        print("Test")
         let player = rock
         let computer = randomComputerOption()
         
@@ -48,24 +49,50 @@ class PlayViewController: UIViewController {
     
     @IBAction func paperPressed() {
         let player = paper
+        let computer = randomComputerOption()
         
         let controller: ResultViewController
         controller = storyboard?.instantiateViewController(withIdentifier: "Result") as! ResultViewController
         
-        
+        if player == computer{
+            controller.gameText = "It's a tie!"
+            controller.imageName = "itsATie"
+        }
+        else if computer == rock{
+            controller.gameText = "Papar covers rock. You win!"
+            controller.imageName = "PaperCoversRock"
+        }
+        else {
+            controller.gameText = "Rock crushes scissors. You win!"
+            controller.imageName = "RockCrushesScissors"
+        }
         
         present(controller, animated: true, completion: nil)
+        
     }
     
     @IBAction func scissorsPressed() {
         let player = scissors
+        let computer = randomComputerOption()
         
         let controller: ResultViewController
         controller = storyboard?.instantiateViewController(withIdentifier: "Result") as! ResultViewController
         
-        
+        if player == computer{
+            controller.gameText = "It's a tie!"
+            controller.imageName = "itsATie"
+        }
+        else if computer == paper{
+            controller.gameText = "Papar covers rock. You win!"
+            controller.imageName = "PaperCoversRock"
+        }
+        else {
+            controller.gameText = "Rock crushes scissors. You lost!"
+            controller.imageName = "RockCrushesScissors"
+        }
         
         present(controller, animated: true, completion: nil)
+        
     }
 }
 

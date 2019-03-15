@@ -18,31 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PZ5-mO-1Mn">
-                                <rect key="frame" x="52" y="183" width="270" height="300"/>
+                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PZ5-mO-1Mn">
+                                <rect key="frame" x="52" y="183" width="270" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtN-wM-nbM">
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtN-wM-nbM" userLabel="scissors">
                                         <rect key="frame" x="195" y="110" width="75" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="scissors"/>
                                         <connections>
-                                            <action selector="scissorsPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="HLG-RR-f2u"/>
+                                            <action selector="scissorsPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="SOw-3H-tAA"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03i-VA-ED3">
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03i-VA-ED3" userLabel="paper">
                                         <rect key="frame" x="98" y="8" width="75" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="paper"/>
                                         <connections>
-                                            <action selector="paperPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5h-cm-2f4"/>
+                                            <action selector="paperPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oio-Rd-Rto"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuW-0O-2f9">
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuW-0O-2f9" userLabel="rock">
                                         <rect key="frame" x="0.0" y="110" width="75" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="rock"/>
                                         <connections>
-                                            <action selector="rockPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZ4-pJ-J5p"/>
+                                            <action selector="rockPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="ptj-Ob-FrO"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Play!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsj-Q7-2aU">
@@ -57,10 +58,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="PZ5-mO-1Mn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-150" id="1Gs-Dw-NmK"/>
-                            <constraint firstItem="PZ5-mO-1Mn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-135" id="qep-bl-c5e"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -94,6 +91,9 @@
                                         <rect key="frame" x="98" y="399" width="71" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Play Again"/>
+                                        <connections>
+                                            <action selector="dismiss" destination="bCB-Qu-jUY" eventType="touchUpInside" id="pEY-WN-8b5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
