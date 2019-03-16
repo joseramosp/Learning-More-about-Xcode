@@ -34,7 +34,7 @@ class RandomColorTextFieldDelegate: NSObject, UITextFieldDelegate {
         
         textField.text = ""
         
-        return true;
+        return true
     }
     
 }

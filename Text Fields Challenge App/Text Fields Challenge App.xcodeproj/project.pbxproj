@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82438AFD223C5F4500F3BB6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82438AFC223C5F4500F3BB6C /* AppDelegate.swift */; };
+		82438AFF223C5F4500F3BB6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82438AFE223C5F4500F3BB6C /* ViewController.swift */; };
+		82438B02223C5F4500F3BB6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82438B00223C5F4500F3BB6C /* Main.storyboard */; };
+		82438B04223C5F4600F3BB6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82438B03223C5F4600F3BB6C /* Assets.xcassets */; };
+		82438B07223C5F4600F3BB6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82438B05223C5F4600F3BB6C /* LaunchScreen.storyboard */; };
+		82438B10223C607500F3BB6C /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82438B0F223C607500F3BB6C /* ZipCodeTextFieldDelegate.swift */; };
+		82438B12223C609E00F3BB6C /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82438B11223C609E00F3BB6C /* CashTextFieldDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82438AF9223C5F4500F3BB6C /* Text Fields Challenge App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text Fields Challenge App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82438AFC223C5F4500F3BB6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82438AFE223C5F4500F3BB6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82438B01223C5F4500F3BB6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82438B03223C5F4600F3BB6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82438B06223C5F4600F3BB6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82438B08223C5F4600F3BB6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82438B0F223C607500F3BB6C /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		82438B11223C609E00F3BB6C /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82438AF6223C5F4500F3BB6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82438AF0223C5F4500F3BB6C = {
+			isa = PBXGroup;
+			children = (
+				82438AFB223C5F4500F3BB6C /* Text Fields Challenge App */,
+				82438AFA223C5F4500F3BB6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82438AFA223C5F4500F3BB6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82438AF9223C5F4500F3BB6C /* Text Fields Challenge App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82438AFB223C5F4500F3BB6C /* Text Fields Challenge App */ = {
+			isa = PBXGroup;
+			children = (
+				82438AFC223C5F4500F3BB6C /* AppDelegate.swift */,
+				82438AFE223C5F4500F3BB6C /* ViewController.swift */,
+				82438B0E223C5FF700F3BB6C /* Text field Delegates */,
+				82438B00223C5F4500F3BB6C /* Main.storyboard */,
+				82438B03223C5F4600F3BB6C /* Assets.xcassets */,
+				82438B05223C5F4600F3BB6C /* LaunchScreen.storyboard */,
+				82438B08223C5F4600F3BB6C /* Info.plist */,
+			);
+			path = "Text Fields Challenge App";
+			sourceTree = "<group>";
+		};
+		82438B0E223C5FF700F3BB6C /* Text field Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				82438B0F223C607500F3BB6C /* ZipCodeTextFieldDelegate.swift */,
+				82438B11223C609E00F3BB6C /* CashTextFieldDelegate.swift */,
+			);
+			path = "Text field Delegates";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82438AF8223C5F4500F3BB6C /* Text Fields Challenge App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82438B0B223C5F4600F3BB6C /* Build configuration list for PBXNativeTarget "Text Fields Challenge App" */;
+			buildPhases = (
+				82438AF5223C5F4500F3BB6C /* Sources */,
+				82438AF6223C5F4500F3BB6C /* Frameworks */,
+				82438AF7223C5F4500F3BB6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Text Fields Challenge App";
+			productName = "Text Fields Challenge App";
+			productReference = 82438AF9223C5F4500F3BB6C /* Text Fields Challenge App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82438AF1223C5F4500F3BB6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jose Ramos";
+				TargetAttributes = {
+					82438AF8223C5F4500F3BB6C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 82438AF4223C5F4500F3BB6C /* Build configuration list for PBXProject "Text Fields Challenge App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82438AF0223C5F4500F3BB6C;
+			productRefGroup = 82438AFA223C5F4500F3BB6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82438AF8223C5F4500F3BB6C /* Text Fields Challenge App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82438AF7223C5F4500F3BB6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82438B07223C5F4600F3BB6C /* LaunchScreen.storyboard in Resources */,
+				82438B04223C5F4600F3BB6C /* Assets.xcassets in Resources */,
+				82438B02223C5F4500F3BB6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82438AF5223C5F4500F3BB6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82438AFF223C5F4500F3BB6C /* ViewController.swift in Sources */,
+				82438B12223C609E00F3BB6C /* CashTextFieldDelegate.swift in Sources */,
+				82438B10223C607500F3BB6C /* ZipCodeTextFieldDelegate.swift in Sources */,
+				82438AFD223C5F4500F3BB6C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82438B00223C5F4500F3BB6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82438B01223C5F4500F3BB6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82438B05223C5F4600F3BB6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82438B06223C5F4600F3BB6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82438B09223C5F4600F3BB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82438B0A223C5F4600F3BB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82438B0C223C5F4600F3BB6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NKU8AU83MB;
+				INFOPLIST_FILE = "Text Fields Challenge App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoseRamos.Text-Fields-Challenge-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82438B0D223C5F4600F3BB6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NKU8AU83MB;
+				INFOPLIST_FILE = "Text Fields Challenge App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoseRamos.Text-Fields-Challenge-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82438AF4223C5F4500F3BB6C /* Build configuration list for PBXProject "Text Fields Challenge App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82438B09223C5F4600F3BB6C /* Debug */,
+				82438B0A223C5F4600F3BB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82438B0B223C5F4600F3BB6C /* Build configuration list for PBXNativeTarget "Text Fields Challenge App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82438B0C223C5F4600F3BB6C /* Debug */,
+				82438B0D223C5F4600F3BB6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82438AF1223C5F4500F3BB6C /* Project object */;
+}
