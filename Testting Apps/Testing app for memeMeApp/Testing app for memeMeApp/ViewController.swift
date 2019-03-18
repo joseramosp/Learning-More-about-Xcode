@@ -15,8 +15,6 @@ UINavigationControllerDelegate, UITextFieldDelegate {
     @IBOutlet weak var pickImageButton: UIButton!
     
     @IBOutlet var topTextField: UITextField!
-   
-    let myTextField: UITextField = UITextField(frame: CGRect(x: 0, y: 275, width: 375.00, height: 30.00));
     
     @IBOutlet weak var bottomTextField: UITextField!
     
@@ -35,42 +33,19 @@ UINavigationControllerDelegate, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        imagePickerView.backgroundColor = UIColor.black
+        imagePickerView.frame = CGRect(x: 0, y: 0, width: Int(self.view.frame.width), height: 600)
+        imagePickerView.backgroundColor = UIColor.white
+        imagePickerView.center = self.view.center
         
         self.pickerController.delegate = self
         
         self.topTextField.delegate = self
         self.bottomTextField.delegate = self
         
-        self.topTextField = UITextField(frame: CGRect(x: 0, y:0, width: 375.00, height: 30.00))
+        self.topTextField.textFieldLayout(view: self.view, yPosition: 100, text: "TOP", placeholder: "", topOrBottomPosition: "top")
         
-        self.topTextField.text = "TOP"
-        self.topTextField.textColor = UIColor.white
-        self.topTextField.textAlignment = .center
-        self.topTextField.defaultTextAttributes[.font] = UIFont(name: "GillSans Bold", size: 60)
-        self.topTextField.defaultTextAttributes[.strokeColor] = UIColor.black
-        self.topTextField.defaultTextAttributes[.strokeWidth] = 2
-        self.topTextField.borderStyle = .none
-        self.topTextField.placeholder = ""
-        //self.topTextField.borderRect(forBounds: )
-            
-        self.bottomTextField.text = "BOTTOM"
-        self.bottomTextField.textColor = UIColor.white
-        self.bottomTextField.textAlignment = .center
-        self.bottomTextField.defaultTextAttributes[.font] = UIFont(name: "GillSans Bold", size: 60)
-        self.bottomTextField.defaultTextAttributes[.strokeColor] = UIColor.black
-        self.bottomTextField.defaultTextAttributes[.strokeWidth] = 2
-        self.bottomTextField.borderStyle = .none
-        self.bottomTextField.allowsEditingTextAttributes = false
-        self.bottomTextField.placeholder = ""
+        self.bottomTextField.textFieldLayout(view: self.view, yPosition: 400, text: "BOTTOM", placeholder: "", topOrBottomPosition: "bottom")
         
-        myTextField.textAlignment = .center
-        self.myTextField.textColor = UIColor.blue
-        self.myTextField.borderStyle = .none
-        self.myTextField.text = "UITextField example"
-        self.myTextField.placeholder = "Place holder text"
-        //myTextField.center = self.view.center
-        self.view.addSubview(myTextField)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -105,7 +80,37 @@ UINavigationControllerDelegate, UITextFieldDelegate {
     
     
     
-    
-    
 }
 
+extension UITextField {
+    
+    func textFieldLayout(view: UIView, yPosition: Int, text: String, placeholder: String, topOrBottomPosition: String){
+        
+        let width = Int(view.frame.width)
+        var height = Int(view.frame.height)
+        
+        if topOrBottomPosition == "top" {
+            
+            height = (height/3)
+            
+        }
+        else if topOrBottomPosition == "bottom" {
+            
+            height = (1 * height) / 3
+        }
+        
+        self.frame = CGRect(x: 0, y: yPosition, width: width, height: 60)
+        
+        self.text = text
+        self.textColor = UIColor.white
+        self.textAlignment = .center
+        self.font = UIFont(name: "GillSans-Bold", size: 40)
+        self.defaultTextAttributes[.strokeColor] = UIColor.black
+        self.defaultTextAttributes[.strokeWidth] = -7
+        self.borderStyle = .none
+        self.placeholder = placeholder
+        self.autocapitalizationType = .allCharacters
+        self .autocorrectionType = .no
+        
+    }
+}
