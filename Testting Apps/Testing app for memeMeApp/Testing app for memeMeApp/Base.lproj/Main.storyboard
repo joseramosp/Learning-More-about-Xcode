@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70w-D2-aYL">
-                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
                                     <barButtonItem title="Pick an image option" style="plain" id="dCd-Nt-rU9">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="osq-w1-NzK">
-                                            <rect key="frame" x="20" y="5" width="75" height="30"/>
+                                            <rect key="frame" x="20" y="12" width="75" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Pick Image"/>
                                             <connections>
@@ -33,7 +33,7 @@
                                     </barButtonItem>
                                     <barButtonItem title="Take a picture option" style="plain" id="OM6-3q-rgE">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ape-i7-Wuv">
-                                            <rect key="frame" x="298" y="5" width="96" height="30"/>
+                                            <rect key="frame" x="298" y="12" width="96" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Take a picture"/>
                                             <connections>
@@ -66,13 +66,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="70w-D2-aYL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bkf-zU-4hN"/>
-                            <constraint firstItem="70w-D2-aYL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-40" id="JSV-9i-7lB"/>
                             <constraint firstItem="70w-D2-aYL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MSq-B4-6Cs"/>
                             <constraint firstItem="70w-D2-aYL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yqC-0k-My0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="ImageSelector" destination="70w-D2-aYL" id="xm1-KO-LSa"/>
                         <outlet property="bottomTextField" destination="HsK-ja-hwX" id="P9a-kP-nHT"/>
                         <outlet property="cameraButton" destination="ape-i7-Wuv" id="cVj-48-jsC"/>
                         <outlet property="imagePickerView" destination="vPv-nq-8s6" id="fAy-vi-iA5"/>
