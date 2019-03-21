@@ -16,7 +16,8 @@ UINavigationControllerDelegate, UITextFieldDelegate {
     @IBOutlet var topTextField: UITextField!
     @IBOutlet weak var bottomTextField: UITextField!
     @IBOutlet weak var imagePickerView: UIImageView!
-    @IBOutlet var ImageSelector: UIToolbar!
+    @IBOutlet var imageSelector: UIToolbar!
+    @IBOutlet var shareAndSaveBar: UINavigationBar!
     
     struct Meme {
         let topText: String!
@@ -48,6 +49,9 @@ UINavigationControllerDelegate, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.imageSelector.isTranslucent = true
+        self.shareAndSaveBar.isTranslucent = true
+        
         self.view.backgroundColor = UIColor.black
         
         imagePickerView.backgroundColor = UIColor.black
@@ -57,7 +61,7 @@ UINavigationControllerDelegate, UITextFieldDelegate {
         imagePickerView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
         imagePickerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         imagePickerView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-        imagePickerView.bottomAnchor.constraint(equalTo: self.ImageSelector.topAnchor).isActive = true
+        imagePickerView.bottomAnchor.constraint(equalTo: self.imageSelector.topAnchor).isActive = true
         //imagePickerView.center = self.view.center
         imagePickerView.contentMode = .scaleAspectFit
         
@@ -157,6 +161,7 @@ UINavigationControllerDelegate, UITextFieldDelegate {
     func generateMemedImage() -> UIImage {
         
         // TODO: Hide toolbar and navbar
+        self.imageSelector.isHidden = true
         
         // Render view to an image
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -165,6 +170,7 @@ UINavigationControllerDelegate, UITextFieldDelegate {
         UIGraphicsEndImageContext()
         
         // TODO: Show toolbar and navbar
+        self.imageSelector.isHidden = false
         
         return memedImage
     }
@@ -174,6 +180,9 @@ UINavigationControllerDelegate, UITextFieldDelegate {
 extension UITextField {
     
     func memeTextFieldLayoutAndAttributes(view: UIView, text: String, placeholder: String, topOrBottomPosition: String){
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+
         
         if topOrBottomPosition == "top" {
             
@@ -189,8 +198,6 @@ extension UITextField {
             self.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
             
         }
-        
-        self.translatesAutoresizingMaskIntoConstraints = false
         
         self.text = text
         self.textColor = UIColor.white
